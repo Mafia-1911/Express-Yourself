@@ -1,0 +1,16 @@
+1. Make main.js 
+2. npm init -y
+3. install necessary dependencies 
+4. Set a type key and set the value to module in package.json 
+5. MAKE the server at local host
+    - Set the port 
+    - Make a get request handler with app.listen(PORT,(empty callback)=>{})
+6. Make Request endpoints 
+    - app.get("THIS_URL_MUST_BE_A_STRING",(request,response)=>{})
+    - To send something use res.send(string)
+    You can send text , you can send html as well 
+    To send a file use res.sendFile(SPECIFY THE ENTIRE DIRECTORY)
+7. Setting up Middlewares 
+Setup Body-parser 
+to access the body of incoming requests 
+app.use(bodyParser.urlencoded({extended:false}));
